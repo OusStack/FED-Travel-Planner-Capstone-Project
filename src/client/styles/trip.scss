@@ -1,0 +1,39 @@
+.trip {
+  border-radius: 8px;
+  padding: 20px;
+  width: min-content;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.trip img {
+  width: 300px;
+  height: 200px;
+}
+
+.trip .trip-label {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.trip .trip-value {
+  font-size: 1.2em;
+}
+
+.destination-container,
+.start-date-container,
+.end-date-container,
+.duration-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  padding: 8px;
+  justify-content: space-between;
+}
+
+.weather-info-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 8px;
+}

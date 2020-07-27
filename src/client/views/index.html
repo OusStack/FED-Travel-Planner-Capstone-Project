@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traveler</title>
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo">Travel Planner</a>
+    </nav>
+    <div class="intro-message">
+        Planing Trip To Anywhere in The World?
+    </div>
+    <form id="trip-form">
+        <fieldset>
+            <label for="travel-destination">Where do you want to travel to?</label>
+            <input type="text" id="travel-destination" placeholder="London" name="city" required />
+        </fieldset>
+
+        <fieldset>
+            <label for="travel-start-date">When do you want to travel?</label>
+            <input type="date" id="travel-start-date" name="start-date" required />
+        </fieldset>
+
+        <fieldset>
+            <label for="travel-end-date">When are you planning to return?</label>
+            <input type="date" id="travel-end-date" name="end-date" required />
+        </fieldset>
+
+        <button id="save-trip-btn" type="button">Save trip</button>
+        <span id="error-text" class="error"></span>
+    </form>
+
+    <div id="my-trips-message">
+        My Trips
+    </div>
+    <div id="my-trips" class="my-trips"></div>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>

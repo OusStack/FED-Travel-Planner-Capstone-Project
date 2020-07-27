@@ -1,0 +1,45 @@
+#trip-form {
+    margin-left: 20px;
+    background-color: white;
+    width: max-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+fieldset {
+    border: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+label {
+    font-size: 1.5em;
+}
+
+input {
+    margin-top: 8px;
+    width: max-content;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+button {
+    width: max-content;
+    margin-top: 0.5rem;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+span {
+    width: max-content;
+    margin-top: 10px;
+    margin-left: 12px;
+    color: red;
+}

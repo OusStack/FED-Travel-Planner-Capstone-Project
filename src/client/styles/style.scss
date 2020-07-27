@@ -1,0 +1,65 @@
+@import "form.scss";
+@import "trip.scss";
+@import "resets.scss";
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background: url(https://www.dropbox.com/s/gbd8upnanqjj2z0/BG.jpeg?raw=1) no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    color: #43545c;
+    line-height: 1.8rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.intro-message {
+    max-width: 100%;
+    color: white;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+
+}
+
+#my-trips-message {
+    font-size: 2.5em;
+    color: white;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.my-trips {
+    margin: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+button:hover {
+    background-color: #4cbbb9;
+}
