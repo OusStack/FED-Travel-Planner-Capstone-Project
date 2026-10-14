@@ -38,7 +38,7 @@
     "package.json": "^2.0.1",
     "request": "^2.88.2",
     "terser-webpack-plugin": "^2.3.5",
-    "webpack": "^4.42.1",
+    "webpack": "^5.111.1",
     "webpack-cli": "^3.3.11"
   },
   "devDependencies": {
